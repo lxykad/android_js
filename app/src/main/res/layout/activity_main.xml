@@ -3,13 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#39c6c1"
     tools:context="com.lxy.js.MainActivity">
 
     <Button
+        android:id="@+id/bt_show_js"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="showJs"
         android:text="JS"
         android:textSize="20sp" />
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/bt_show_js" />
 
 </RelativeLayout>
